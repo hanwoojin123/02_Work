@@ -1,0 +1,368 @@
+@charset "utf-8";
+/* ============================
+   =======  common.css  =======
+   ============================ */
+
+
+
+/* ######### font-face(start) ######### */
+
+/* dm-sans-700 - latin */
+@font-face {
+	font-family: 'DMSans_18pt-Bold';
+	src: url('../font/dm-sans-v14-latin-700.eot'); /* IE9 Compat Modes */
+	src: url('../font/dm-sans-v14-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../font/dm-sans-v14-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+		url('../font/dm-sans-v14-latin-700.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+		url('../font/dm-sans-v14-latin-700.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+		url('../font/dm-sans-v14-latin-700.svg#DMSans') format('svg'); /* Legacy iOS */
+}
+/* noto-sans-kr-regular - korean_latin */
+@font-face {
+	font-family: 'NotoSansKR-Regular';
+	src: url('../font/noto-sans-kr-v36-korean_latin-regular.eot'); /* IE9 Compat Modes */
+	src: url('../font/noto-sans-kr-v36-korean_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../font/noto-sans-kr-v36-korean_latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+		url('../font/noto-sans-kr-v36-korean_latin-regular.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+		url('../font/noto-sans-kr-v36-korean_latin-regular.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+		url('../font/noto-sans-kr-v36-korean_latin-regular.svg#NotoSansKR') format('svg'); /* Legacy iOS */
+}
+/* noto-sans-kr-500 - korean_latin */
+@font-face {
+font-family: 'NotoSansKR-Medium';
+	src: url('../font/noto-sans-kr-v36-korean_latin-500.eot'); /* IE9 Compat Modes */
+	src: url('../font/noto-sans-kr-v36-korean_latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../font/noto-sans-kr-v36-korean_latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+		url('../font/noto-sans-kr-v36-korean_latin-500.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+		url('../font/noto-sans-kr-v36-korean_latin-500.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+		url('../font/noto-sans-kr-v36-korean_latin-500.svg#NotoSansKR') format('svg'); /* Legacy iOS */
+}
+/* noto-sans-kr-700 - korean_latin */
+@font-face {
+	font-family: 'NotoSansKR-Bold';
+	src: url('../font/noto-sans-kr-v36-korean_latin-700.eot'); /* IE9 Compat Modes */
+	src: url('../font/noto-sans-kr-v36-korean_latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../font/noto-sans-kr-v36-korean_latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+		url('../font/noto-sans-kr-v36-korean_latin-700.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+		url('../font/noto-sans-kr-v36-korean_latin-700.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+		url('../font/noto-sans-kr-v36-korean_latin-700.svg#NotoSansKR') format('svg'); /* Legacy iOS */
+}
+/* kanit-700 - latin */
+@font-face {
+	font-family: 'Kanit-Bold';
+	src: url('../font/kanit-v15-latin-700.eot'); /* IE9 Compat Modes */
+	src: url('../font/kanit-v15-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../font/kanit-v15-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+		url('../font/kanit-v15-latin-700.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+		url('../font/kanit-v15-latin-700.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+		url('../font/kanit-v15-latin-700.svg#Kanit') format('svg'); /* Legacy iOS */
+}
+
+/* ######### font-face(end) ######### */
+
+
+body { font-family: "NotoSansKR-Regular"; color: #000; }
+
+section { overflow: hidden; position: relative; }
+
+h1 { font-family: "DMSans_18pt-Bold"; }
+p.nav_logo { font-family: "DMSans_18pt-Bold"; }
+h1.logo_header { color: #fff; }
+h1.logo_footer { color: #000; }
+
+h2 { font-family: "Kanit-Bold"; }
+
+address { font-style: normal; }
+
+.inner_wrap { position: relative; width: 100%; max-width: 1240px; margin: 0 auto; }
+
+p.title { color: rgba(0, 0, 0, 0.7); text-align: center; }
+
+
+.btn_more { overflow: hidden; position: relative; display: inline-block; border: 2px solid #000; border-radius: 99999999px; color: #000; font-family: "NotoSansKR-Bold"; }
+.btn_more::before { content: ""; position: absolute; top: 0; left: 0; display: block; width: 0; height: 100%; background: #000; transition: all 0.2s; }
+.btn_more:hover { color: #fff; transition: 0.7s; }
+.btn_more:hover::before { width: 100%; z-index: -1; }
+
+.btn_more[class ~= "_S"] { padding: 0.5em 1.5625em; }
+.btn_more[class ~= "_L"] { padding: 0.5em 3.125em; }
+
+
+.dir_btns[class ~= "prev"] > span { clip-path: polygon(30% 0, 78% 50%, 30% 100%, 22% 100%, 70% 50%, 22% 0%); transform: rotate(-180deg) translateX(2px); }
+.dir_btns[class ~= "next"] > span { clip-path: polygon(30% 0, 78% 50%, 30% 100%, 22% 100%, 70% 50%, 22% 0%); transform: translateX(2px); }
+
+.dir_btns[class ~= "_bg_W"] > span { background: #fff; }
+.dir_btns[class ~= "_bg_B"] > span { background: #000; }
+.dir_btns[class ~= "_bg_B"] { background: #fff; border-radius: 99999px; box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); }
+
+
+input:focus { outline: none; }
+
+
+/* ========== Mobile(start) ========== */
+@media screen and (max-width: 767px) {
+
+
+	._DT { display: none; }
+
+	body { font-size: 0.875em; }
+
+	section h2 { font-size: 1.6428em; margin-bottom: 0.4347em; line-height: 1; }
+
+	p.title { font-size: 1em; margin-bottom: 1.7857em; word-break: keep-all; }
+	
+	p.desc[class ~= "_com"] { color: rgba(0, 0, 0, 0.7); font-size: 1em; margin-bottom: 1.7857em; text-align: center; }
+	
+	.btn_more[class ~= "_S"] { font-size: 0.8571em; }
+	.btn_more[class ~= "_M"] { font-size: 1em; }
+
+	.dir_btns[class ~= "_M"] { padding: 18px; }
+
+	.dir_btns[class ~= "_S"] > span { width: 16px; height: 16px; }
+	.dir_btns[class ~= "_M"] > span { width: 18px; height: 18px; }
+	.dir_btns[class ~= "_L"] > span { display: none; }
+
+
+	/* ======= header 영역 ======= */
+
+	header { position: absolute; top: 0; left: 0; z-index: 100; width: 100%; height: 50px; background: transparent; color: #000; padding: 0 1.4285em; }
+
+	header h1.logo_header { position: absolute; display: block; line-height: 50px; font-size: 1.4285em; }
+
+	header p.nav_logo { display: block; line-height: 50px; font-size: 1.4285em; margin-bottom: 0.75em; color: #f8b915; }
+
+	header nav { position: fixed; left: 100%; top: 0; width: 100vw; height: 100vh; padding-left: 1.4285em; background: #fff; transform: translateX(0%); transition: all 0.2s; }
+	header.on nav { transform: translateX(-100%); }
+	header nav ul { overflow-y: scroll; height: 100%; }
+	header nav > ul > li > button { position: relative; display: block; width: 100%; height: 3.75em; line-height: 3.75; font-family: "NotoSansKR-Bold"; font-size: 1.1428em; }
+	header nav ul > li > button::after { content: ""; display: block; position: absolute; right: 30px; top: 40%; transform: translate(50%, -50%); width: 12px; height: 12px; background: #333; clip-path: polygon(35% 0, 85% 50%, 35% 100%, 22% 100%, 70% 50%, 22% 0%); transform: rotate(90deg); transition: transform 0.3s; }
+	header nav ul > li.active > button::after { transform: rotate(-90deg); }
+
+	header ul.sub { overflow: hidden; height: 0; transition: height 0.2s; }
+	header ul.sub > li > a { display: block; width: 100%; height: 100%; line-height: 50px; padding-left: 20px; color: #000;  background: #fff; text-align: left; font-family: "NotoSansKR-Bold"; font-size: 1em; }
+	header ul.sub > li:hover > a { color: #f8b915; transition: 0.3s; }
+
+	header nav > ul > li:nth-child(1)[class ~= "active"] > ul.sub { height: 150px; }
+	header nav > ul > li:nth-child(2)[class ~= "active"] > ul.sub { height: 150px; }
+	header nav > ul > li:nth-child(3)[class ~= "active"] > ul.sub { height: 100px; }
+	header nav > ul > li:nth-child(4)[class ~= "active"] > ul.sub { height: 100px; }
+	header nav > ul > li:nth-child(5)[class ~= "active"] > ul.sub { height: 150px; }
+	header nav > ul > li:nth-child(6)[class ~= "active"] > ul.sub { height: 100px; }
+
+	header button.btn_menu { position: absolute; top: 9px; right: 0; display: block; width: 32px; height: 32px; background: url("../images/ico_index_header_open_T,M.png") no-repeat center; background-size: 66.6666%; }
+	header.on button.btn_menu { background: url("../images/ico_index_header_close_T,M.png") no-repeat center; width: 32px; height: 32px; background-size: 50%; }
+
+
+	/* ======= footer 영역 ======= */
+
+	footer { overflow: hidden; padding: 2.8571em 1.4285em; }
+
+	footer div.footer_R { width: 100%; height: 100%; }
+	footer div.footer_R > div.footer_menu { display: none; }
+	footer div.footer_R > div.contact > ul > li:last-child { display: none; }
+	footer div.footer_R > div.contact > ul > li:first-child { display: inline-block; background: #f8b915; font-size: 1.1666em; border-radius: 999999px; }
+	footer div.footer_R > div.contact > ul > li:first-child > a { display: block; padding: 0.4375em 1.25em; }
+
+	footer div.footer_L > h1 { font-size: 1.7857em; margin-bottom: 0.8em; }
+	footer div.footer_L > div.footer_info { word-break: keep-all; }
+	footer div.footer_L > div.footer_info > p.company { margin-bottom: 1.4285em; }
+	footer div.footer_L > div.footer_info > p.company > span + span { position: relative; margin-left: 10px; }
+	footer div.footer_L > div.footer_info > p.copy { display: none; }
+
+
+}
+/* ========== Mobile(end) ========== */
+
+/*  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!						!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!		Kyochon			!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!						!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* ========== Tablet(start) ========== */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+	._Mob { display: none; }
+	
+	section h2 { font-size: 2.1875em; margin-bottom: 0.5714em; line-height: 1; }
+	
+	p.title { font-size: 1.125em; margin-bottom: 1.9444em; }
+	
+	p.desc[class ~= "_com"] { color: rgba(0, 0, 0, 0.7); text-align: left; font-size: 1em; margin-bottom: 2.1875em; }
+	
+	.btn_more[class ~= "_S"] { font-size: 0.875em; }
+	.btn_more[class ~= "_M"] { font-size: 1em; }
+	
+	.dir_btns[class ~= "_M"] { padding: 20px; }
+	.dir_btns[class ~= "_L"] { padding: 22px; }
+
+	.dir_btns[class ~= "_S"] > span { width: 20px; height: 20px; }
+	.dir_btns[class ~= "_M"] > span { width: 22px; height: 22px; }
+	.dir_btns[class ~= "_L"] > span { width: 24px; height: 24px; }
+	
+	
+	/* ======= header 영역 ======= */
+
+	header { position: absolute; top: 0; left: 0; z-index: 100; width: 100%; height: 80px; background: transparent; color: #000; padding: 0 1.75em; }
+
+	header h1.logo_header { position: absolute; display: block; line-height: 80px; font-size: 2.0625em; }
+
+	header p.nav_logo { display: block; line-height: 80px; font-size: 2.0625em; margin-bottom: 0.606em; color: #f8b915; }
+
+	header nav { position: fixed; left: 100%; top: 0; width: 50vw; height: 100vh; padding-left: 1.75em; background: #fff; transform: translateX(0%); transition: all 0.2s; }
+	header.on nav { transform: translateX(-100%); }
+	header nav ul { overflow-y: scroll; height: 100%; }
+	header nav > ul > li > button { position: relative; display: block; width: 100%; height: 4em; line-height: 4; font-family: "NotoSansKR-Bold"; font-size: 1.25em; }
+	header nav ul > li > button::after { content: ""; display: block; position: absolute; right: 41px; top: 40%; transform: translate(50%, -50%); width: 16px; height: 16px; background: #333; clip-path: polygon(35% 0, 85% 50%, 35% 100%, 22% 100%, 70% 50%, 22% 0%); transform: rotate(90deg); transition: transform 0.3s; }
+	header nav ul > li.active > button::after { transform: rotate(-90deg); }
+
+	header ul.sub { overflow: hidden; height: 0; transition: height 0.2s; }
+	header ul.sub > li > a { display: block; width: 100%; height: 100%; line-height: 60px; padding-left: 20px; color: #000;  background: #fff; text-align: left; font-family: "NotoSansKR-Bold"; font-size: 1.125em; }
+	header ul.sub > li:hover > a { color: #f8b915; transition: 0.3s; }
+
+	header nav > ul > li:nth-child(1)[class ~= "active"] > ul.sub { height: 180px; }
+	header nav > ul > li:nth-child(2)[class ~= "active"] > ul.sub { height: 180px; }
+	header nav > ul > li:nth-child(3)[class ~= "active"] > ul.sub { height: 120px; }
+	header nav > ul > li:nth-child(4)[class ~= "active"] > ul.sub { height: 120px; }
+	header nav > ul > li:nth-child(5)[class ~= "active"] > ul.sub { height: 180px; }
+	header nav > ul > li:nth-child(6)[class ~= "active"] > ul.sub { height: 120px; }
+
+	header button.btn_menu { position: absolute; top: 19px; right: 0; display: block; width: 42px; height: 42px; background: url("../images/ico_index_header_open_T,M.png") no-repeat center; background-size: 66.6666%; }
+	header.on button.btn_menu { background: url("../images/ico_index_header_close_T,M.png") no-repeat center; width: 42px; height: 42px; background-size: 50%; }
+
+
+	/* ======= footer 영역 ======= */
+
+	footer { overflow: hidden; padding: 5.3846em 2.1538em; font-size: 0.8125em; }
+
+	footer div.footer_R { position: absolute; top: 0; right: 0; width: 100%; height: 100%; }
+	footer div.footer_R > div.footer_menu { position: absolute; top:0; right: 0; }
+	footer div.footer_R > div.footer_menu > ul { overflow: hidden; }
+	footer div.footer_R > div.footer_menu > ul > li { float: left; }
+	footer div.footer_R > div.footer_menu > ul > li + li { position: relative; margin-left: 30px; }
+	footer div.footer_R > div.footer_menu > ul > li + li::before { content: ""; position: absolute; top: 50%; left: -15px; transform: translate(-50%, -50%); width: 1px; height: 60%; background: rgba(0, 0, 0, 0.3); }
+	footer div.footer_R > div.contact { position: absolute; bottom: 0; right: 0; }
+	footer div.footer_R > div.contact > ul { text-align: right; }
+	footer div.footer_R > div.contact > ul > li:last-child { position: relative; font-family: "NotoSansKR-Bold"; font-size: 1.5384em; }
+	footer div.footer_R > div.contact > ul > li:last-child::after { content: ""; position: absolute; top: 55%; left: -25px; transform: translate(-50%, -50%); width: 23px; height: 23px; background: url("../images/ico_index_footer.png") no-repeat; background-size: 100%; }
+	footer div.footer_R > div.contact > ul > li:first-child { display: inline-block; background: #f8b915; font-size: 1.2307em; border-radius: 999999px; margin-bottom: 65px; }
+	footer div.footer_R > div.contact > ul > li:first-child > a { display: block; padding: 0.4375em 1.25em; }
+
+	footer div.footer_L > h1 { font-size:  2.5384em; margin-bottom: 1.5151em; }
+	footer div.footer_L > div.footer_info > p.company { margin-bottom: 3.8461em; }
+	footer div.footer_L > div.footer_info > p.company > span { position: relative; margin-right: 30px; }
+	footer div.footer_L > div.footer_info > p.company > span:nth-of-type(3) { margin-right: 0; }
+	footer div.footer_L > div.footer_info > p.company > span::before { content: ""; position: absolute; top: 50%; left: -15px; transform: translate(-50%, -50%); width: 1px; height: 60%; background: rgba(0, 0, 0, 0.3); }
+	footer div.footer_L > div.footer_info > p.company > span:nth-of-type(1)::before { display: none; }
+
+
+}
+/* ========== Tablet(end) ========== */
+
+/*  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!						!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!		Kyochon			!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!						!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* ========== Desktop(start) ========== */
+@media screen and (min-width: 1025px) {
+
+
+	._Mob { display: none; }
+
+	p.nav_logo { display: none; }
+
+	section h2 { font-size: 3.125em; margin-bottom: 0.6em; line-height: 1; }
+
+	p.title { font-size: 1.375em; margin-bottom: 2.27272em; }
+
+	p.desc[class ~= "_com"] { color: rgba(0, 0, 0, 0.7); text-align: left; font-size: 1em; margin-bottom: 3.125em; }
+
+	.btn_more[class ~= "_S"] { font-size: 1em; }
+	.btn_more[class ~= "_M"] { font-size: 1.125em; }
+	
+	.dir_btns[class ~= "_M"] { padding: 25px; }
+	.dir_btns[class ~= "_L"] { padding: 31px; }
+
+	.dir_btns[class ~= "_S"] > span { width: 20px; height: 20px; }
+	.dir_btns[class ~= "_M"] > span { width: 27px; height: 27px; }
+	.dir_btns[class ~= "_L"] > span { width: 33px; height: 33px; }
+
+
+	/* ======= header 영역 ======= */
+
+	header { position: absolute; top: 0; left: 0; z-index: 100; width: 100%; height: 80px; background: transparent; color: #fff; }
+
+	header h1 { position:absolute; display: block; line-height: 80px; font-size: 2.0625em; }
+
+	header nav { float: right; }
+	header nav > ul > li { float: left; width: calc((100% - 75px) / 6); height: 80px; text-align: center; }
+	header nav > ul > li + li { margin-left: 15px; }
+	header nav > ul > li > button { display: block; width: 100%; height: 100%; line-height: 80px; text-align: center; font-family: "NotoSansKR-Bold"; font-size: 1.125em; }
+
+	header ul.sub { overflow: hidden; width: 200%; height: 0; transition: height 0.2s;  border-radius: 7px; }
+	header ul.sub > li { width: 100%; height: 50px; }
+	header ul.sub > li > a { display: block; width: 100%; height: 100%; line-height: 50px; padding-left: 20px; color: #000;  background: #fff; text-align: left; font-family: "NotoSansKR-Bold"; }
+	header ul.sub > li:hover > a { color: #f8b915; transition: 0.3s; }
+
+	header nav > ul > li:nth-child(1):hover > ul.sub { height: 150px; }
+	header nav > ul > li:nth-child(2):hover > ul.sub { height: 150px; }
+	header nav > ul > li:nth-child(3):hover > ul.sub { height: 100px; }
+	header nav > ul > li:nth-child(4):hover > ul.sub { height: 100px; }
+	header nav > ul > li:nth-child(5):hover > ul.sub { height: 150px; }
+	header nav > ul > li:nth-child(6):hover > ul.sub { height: 100px; }
+	
+	header button.btn_menu { display: none; }
+
+
+	/* ======= footer 영역 ======= */
+
+	footer { padding: 7.1428em 0; font-size: 0.875em; }
+
+	footer > div.inner_wrap { display: flex; justify-content: space-between; }
+
+	footer div.footer_R { display: flex; flex-direction: column; justify-content: space-between; }
+	footer div.footer_R > div.footer_menu > ul { overflow: hidden; }
+	footer div.footer_R > div.footer_menu > ul > li { float: left; }
+	footer div.footer_R > div.footer_menu > ul > li + li { position: relative; margin-left: 30px; }
+	footer div.footer_R > div.footer_menu > ul > li + li::before { content: ""; position: absolute; top: 50%; left: -15px; transform: translate(-50%, -50%); width: 1px; height: 60%; background: rgba(0, 0, 0, 0.3); }
+	footer div.footer_R > div.contact > ul { overflow: hidden; }
+	footer div.footer_R > div.contact > ul > li { float: right; }
+	footer div.footer_R > div.contact > ul > li:last-child { position: relative; margin-right: 30px; font-family: "NotoSansKR-Bold"; font-size: 1.71428em; }
+	footer div.footer_R > div.contact > ul > li:last-child::before { content: ""; position: absolute; top: 50%; right: -15px; transform: translate(-50%, -50%); width: 1px; height: 35%; background: rgba(0, 0, 0, 0.3); }
+	footer div.footer_R > div.contact > ul > li:last-child::after { content: ""; position: absolute; top: 55%; left: -25px; transform: translate(-50%, -50%); width: 28px; height: 28px; background: url("../images/ico_index_footer.png") no-repeat; background-size: 100%; }
+	footer div.footer_R > div.contact > ul > li:first-child { display: block; background: #f8b915; font-size: 1.1428em; border-radius: 999999px; }
+	footer div.footer_R > div.contact > ul > li:first-child > a { display: block; padding: 0.4375em 1.25em; }
+
+	footer div.footer_L > h1 { font-size: 2.3571em; margin-bottom: 1.2121em; }
+	footer div.footer_L > div.footer_info > p.company { margin-bottom: 2.8571em; }
+	footer div.footer_L > div.footer_info > p.company > span { position: relative; margin-right: 30px; }
+	footer div.footer_L > div.footer_info > p.company > span:nth-of-type(3) { margin-right: 0; }
+	footer div.footer_L > div.footer_info > p.company > span::before { content: ""; position: absolute; top: 50%; left: -15px; transform: translate(-50%, -50%); width: 1px; height: 60%; background: rgba(0, 0, 0, 0.3); }
+	footer div.footer_L > div.footer_info > p.company > span:nth-of-type(1)::before { display: none; }
+
+
+}
+/* ========== Desktop(end) ========== */

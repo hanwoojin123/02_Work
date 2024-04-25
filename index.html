@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang='ko'>
+<head>
+
+	<meta charset="utf-8">
+	<title>교촌치킨</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/index.css">
+	<style>
+
+	</style>
+	<!-- [if it IE 9]
+		<script src="js/html5shiv.js"></script>
+	<![endif] -->
+	<script src="js/common.js"></script>
+	<script src="js/index.js"></script>
+</head>
+
+ <body>
+
+	<header>
+		<div class="inner_wrap">
+			<h1 class="logo_header"><a href="index.html">KYOCHON</a></h1>
+			<nav>
+				<p class="nav_logo">KYOCHON</p>
+				<ul class="clearfix">
+					<li>
+						<button class="btn_nav">메뉴</button>
+						<ul class="sub">
+							<li><a href="#">치킨</a></li>
+							<li><a href="#">사이드</a></li>
+							<li><a href="#">수제맥주</a></li>
+						</ul>
+					</li>
+					<li>
+						<button class="btn_nav">브랜드</button>
+						<ul class="sub">
+							<li><a href="#">교촌소개</a></li>
+							<li><a href="#">CEO 인사말</a></li>
+							<li><a href="#">PR 센터</a></li>
+						</ul>
+					</li>
+					<li>
+						<button class="btn_nav">가맹</button>
+						<ul class="sub">
+							<li><a href="#">가맹안내</a></li>
+							<li><a href="#">가맹문의</a></li>
+						</ul>
+					</li>
+					<li>
+						<button class="btn_nav">매장</button>
+						<ul class="sub">
+							<li><a href="#">국내매장</a></li>
+							<li><a href="#">해외매장</a></li>
+						</ul>
+					</li>
+					<li>
+						<button class="btn_nav">이벤트</button>
+						<ul class="sub">
+							<li><a href="#">진행중인 이벤트</a></li>
+							<li><a href="#">지난 이벤트</a></li>
+							<li><a href="#">당첨자 발표</a></li>
+						</ul>
+					</li>
+					<li>
+						<button class="btn_nav">커뮤니티</button>
+						<ul class="sub">
+							<li><a href="#">공지사항</a></li>
+							<li><a href="#">뉴스</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<button id="btn_menu" class="btn_menu"><span class="blind">menu button</span></button>
+		</div>
+	</header>
+
+
+	<section class="visual">
+		<h2 class="blind">visual section</h2>
+		<div class="slides cur">
+			<picture>
+				<source srcset="images/img_index_visual_bg_02_D.jpg" media="(min-width: 1025px)">
+				<source srcset="images/img_index_visual_bg_02_T,M.jpg" media="(max-width: 1024px) and (min-width: 768px)">
+				<source srcset="images/img_index_visual_bg_02_T,M.jpg" media="(max-width: 767px)">
+				<img src="images/img_index_visual_bg_02_D.jpg" alt="오른쪽에 몰려있는 닭다리 5조각">
+			</picture>
+			<div class="info_wrap inner_wrap">
+				<h3 class="title">세계인이<br>함께하는 브랜드<br>교촌</h3>
+				<p class="desc">교촌의 무한한 가능성을 가지고 <br>국내를 넘어 세계입맛의 기준이 <br class="_Mob">되겠습니다.</p>
+			</div>
+		</div>
+		<div class="slides prev">
+			<picture>
+				<source srcset="images/img_index_visual_bg_01_D.jpg" media="(min-width: 1025px)">
+				<source srcset="images/img_index_visual_bg_01_T,M.jpg" media="(max-width: 1024px) and (min-width: 768px)">
+				<source srcset="images/img_index_visual_bg_01_T,M.jpg" media="(max-width: 767px)">
+				<img src="images/img_index_visual_bg_01_D.jpg" alt="배경이 블러 처리된 접시 위에 올려진 치킨">
+			</picture>
+			<div class="info_wrap inner_wrap">
+				<h3 class="title">맛으로<br>사랑받고 있는 <br class="_Mob">브랜드<br>교촌</h3>
+				<p class="desc">맛에 대해 오직 한길을 달려나가는 <br>글로벌 기업의 리더가
+				되겠습니다.</p>
+			</div>
+		</div>
+		<div class="slides next">
+			<picture>
+				<source srcset="images/img_index_visual_bg_03.jpg" media="(min-width: 1025px)">
+				<source srcset="images/img_index_visual_bg_03.jpg" media="(max-width: 1024px) and (min-width: 768px)">
+				<source srcset="images/img_index_visual_bg_03.jpg" media="(max-width: 767px)">
+				<img src="images/img_index_visual_bg_03.jpg" alt="사방에 흩뿌려진 순살치킨 조각들">
+			</picture>
+			<div class="info_wrap inner_wrap">
+				<h3 class="title">깨끗하게<br>즐길 수 있는<br>교촌</h3>
+				<p class="desc">깨끗한 공정과정을 거치며 <br>엄선된 재료로 신선함을 <br class="_Mob">약속하겠습니다.</p>
+			</div>
+		</div>
+
+		<div class="pagination inner_wrap">
+			<button class="active"><span><span class="blind">slide 01 button</span></span></button><!--
+			--><button><span><span class="blind">slide 02 button</span></span></button><!--
+			--><button><span><span class="blind">slide 03 button</span></span></button>
+		</div>
+		<div class="dir_wrap inner_wrap">
+			<button class="dir_btns prev _bg_W _S"><span><span class="blind">prev button</span></span></button>
+			<button class="dir_btns next _bg_W _S"><span><span class="blind">next button</span></span></button>
+		</div>
+	</section>
+
+
+	<section class="menu">
+		<h2>BEST MENU</h2>
+		<div class="inner_wrap_menu">
+			<div class="view_mask">
+				<ul class="clearfix">
+					<li>
+						<a href="#">
+							<img src="images/img_index_menu_item_01.png" alt="교촌 반반콤보">
+							<p class="desc">교촌 반반콤보</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/img_index_menu_item_02.png" alt="교촌 반반윙">
+							<p class="desc">교촌 반반윙</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/img_index_menu_item_03.png" alt="교촌 허니콤보">
+							<p class="desc">교촌 허니콤보</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/img_index_menu_item_04.png" alt="교촌 레드콤보">
+							<p class="desc">교촌 레드콤보</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/img_index_menu_item_05.png" alt="교촌 오리지날">
+							<p class="desc">교촌 오리지날</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/img_index_menu_item_06.png" alt="교촌 허니 오리지날">
+							<p class="desc">허니 오리지날</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/img_index_menu_item_07.png" alt="교촌 반반 오리지날">
+							<p class="desc">반반 오리지날</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/img_index_menu_item_08.png" alt="교촌 윙">
+							<p class="desc">교촌 윙</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<button class="dir_btns prev _bg_B _M"><span><span class="blind">prev button</span></span></button>
+			<button class="dir_btns next _bg_B _M "><span><span class="blind">next button</span></span></button>
+		</div>
+	</section>
+
+
+	<section class="promo">
+		<div class="inner_wrap">
+			<h2>PROMOTION VIDEO</h2>
+			<div class="video_wrap">
+				<video autoplay muted controls>
+					<source src="media/video/video_index_promo.mp4" type="video/mp4">
+					<source src="media/video/video_index_promo.webm" type="video/webm">
+					<source src="media/video/video_index_promo.ogv" type="video/ogg">
+					이 브라우저는 HTML5를 지원하지 않습니다.
+				</video>
+			</div>
+		</div>
+	</section>
+	
+	 <section class="marquee">
+		<h2 class="blind">marquee</h2>
+		<div class="marquee_wrap">
+			<p class="text_01"><span>THE BEST CHOICE IS KYOCHON!&#160;</span><span>THE BEST CHOICE IS KYOCHON!&#160;</span><span>THE BEST CHOICE IS KYOCHON!&#160;</span><span>THE BEST CHOICE IS KYOCHON!&#160;</span></p><p class="text_02"><span>THE BEST CHOICE IS KYOCHON!&#160;</span><span>THE BEST CHOICE IS KYOCHON!&#160;</span><span>THE BEST CHOICE IS KYOCHON!&#160;</span><span>THE BEST CHOICE IS KYOCHON!&#160;</span></p>
+		</div>
+		<div class="marquee_wrap">
+			<p class="text_01"><span>THE BEST CHOICE IS KYOCHON!&#160;</span><span>THE BEST CHOICE IS KYOCHON!&#160;</span><span>THE BEST CHOICE IS KYOCHON!&#160;</span><span>THE BEST CHOICE IS KYOCHON!&#160;</span></p><p class="text_02"><span>THE BEST CHOICE IS KYOCHON!&#160;</span><span>THE BEST CHOICE IS KYOCHON!&#160;</span><span>THE BEST CHOICE IS KYOCHON!&#160;</span><span>THE BEST CHOICE IS KYOCHON!&#160;</span></p>
+		</div>
+		
+	</section>
+
+	<section class="about">
+		<div class="view_mask">
+			<div class="info_wrap _DT">
+				<h2>ABOUT<br class="_DT"> KYOCHON</h2>
+				<p class="desc _com">맛으로 전세계인들에게 사랑받고 있는 교촌은 엄섬된 재료와 교촌만의 조리기법으로 차별화되고 믿을 수 있는 품질을 자랑합니다. </p>
+				<a href="#" class="btn_more _L _DT">더 알아보기</a>
+			</div>
+			<ul class="clearfix">
+				<li>
+					<img src="images/img_index_about_item_02.jpg" alt="도마 위에 올려져 있는 치킨 조각들">
+					<div class="info_hover">
+						<p class="key_word">HYGIENE</p>
+						<p class="desc">항상 신선한 원재료를 취급합니다.</p>
+					</div>
+				</li>
+				<li>
+					<img src="images/img_index_about_item_03.jpg" alt="치킨에 양념을 바르고 있는 모습">
+					<div class="info_hover">
+						<p class="key_word">HEALTH</p>
+						<p class="desc">건강한 삶을 위해 항상 노력합니다.</p>
+					</div>
+				</li>
+				<li>
+					<img src="images/img_index_about_item_04.jpg" alt="도마 위에 파와 소스와 함께 올려져 있는 치킨">
+					<div class="info_hover">
+						<p class="key_word">HONEST</p>
+						<p class="desc">정직을 기반으로 나아가겠습니다.</p>
+					</div>
+				</li>
+				<li>
+					<img src="images/img_index_about_item_05.jpg" alt="접시 위로 떨어지고 있는 치킨 조각">
+					<div class="info_hover">
+						<p class="key_word">SPECIAL</p>
+						<p class="desc">전문화와 차별화를 내세웁니다.</p>
+					</div>
+				</li>
+				<li>
+					<img src="images/img_index_about_item_01.jpg" alt="접시에 담겨져 있는 치킨">
+					<div class="info_hover">
+						<p class="key_word">CUSTOMER</p>
+						<p class="desc">항상 고객님을 먼저 생각합니다.</p>
+					</div>
+				</li>
+			</ul>
+
+			<button class="dir_btns prev _bg_B _L"><span><span class="blind">prev button</span></span></button>
+			<button class="dir_btns next _bg_B _L "><span><span class="blind">next button</span></span></button>
+			
+		</div>
+		<div class="btn_wrap _Mob">
+			<a href="#" class="btn_more _L">더 알아보기</a>
+		</div>
+	</section>
+
+
+	<section class="franchisee">
+		<div class="inner_wrap">
+			<div class="info_wrap">
+				<h2>WORK TOGETHER,<br>WITH KYOCHON!</h2>
+				<p class="desc _com">교촌치킨의 가족으로 모시고자 합니다.</p>
+				<a href="#" class="btn_more _L _DT">가맹점 문의</a>
+			</div>
+			<div class="img_wrap">
+				<img src="images/img_index_franchisee_item.jpg" alt="각종 접시 위에 올려져 있는 치킨과 야채들">
+			</div>
+			<a href="#" class="btn_more _L _Mob">가맹점 문의</a>
+		</div>
+		<div class="ani_01"><img src="images/img_index_franchisee_ani_01.png" alt="오른쪽 상단 위아래로 움직은 노란색 동그라미 장식"></div>
+		<div class="ani_02"><img src="images/img_index_franchisee_ani_02.png" alt="왼쪽 하단 위아래로 움직이는 작은 노란색 동그라미 장식"></div>
+	</section>
+
+
+	<section class="store">
+		<img src="images/img_index_store_bg.jpg" alt="좌측 하단과 우측 상단의 치킨">
+		
+		<div class="info_wrap">
+			<h2>SEARCH STORE</h2>
+			<p class="title">주변에 있는 교촌치킨 가맹점을 찾아보세요.</p>
+			<form action="store.jsp">
+				<div class="input_wrap">
+					<label class="blind" for="store">search</label><input type="text" class="text" id="store" placeholder="지역이나 매장이름을 입력해주세요." required style="border: 1px solid #fff; background: rgba(0, 0, 0, 0.4);">
+					<input type="submit" class="submit" value="검색">
+				</div>
+			</form>
+		</div>
+	</section>
+
+
+	<section class="event">
+		<div class="inner_wrap">
+			<h2>EVENT</h2>
+			<p class="title">교촌치킨에서 진행하는 다양한 이벤트들을 확인해보세요!</p>
+			<ul>
+				<li>
+					<a href="#">
+						<img src="images/img_index_event_item_01.jpg" alt="포장 주문 시 10% 할인 이벤트">
+						<div class="info_wrap">
+							<h3>[교촌] 포장할인 프로모션</h3>
+							<p class="desc">이벤트 기간 : 2024년 1월 10일 ~ 2024년 3월 15일</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/img_index_event_item_02.jpg" alt="필방 오마카세 리뉴얼, 교촌필방 주류서비스 혜택 안내">
+						<div class="info_wrap">
+							<h3>[교촌] 필방 오마카세 리뉴얼</h3>
+							<p class="desc">이벤트 기간 : 2024년 1월 4일 ~ 2024년 2월 21 일</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<a href="#" class="btn_more _L">이벤트 더보기</a>
+		</div>
+	</section>
+
+
+	<section class="community">
+		<img src="images/img_index_community_bg.jpg" alt="컴퓨터 앞에서 키보드를 입력하고 있는 사람">
+		<div class="inner_wrap">
+			<div class="com notice">
+				<h2>NOTICE</h2>
+				<a href="#" class="btn_more _S">MORE</a>
+				<ul>
+					<li>
+						<a href="#">
+							<span class="detail">교촌치킨, 교촌과 나눈 추억이 가득… ‘교촌 추억 공모전’ 수상작 발표</span>
+							<span class="date">2024. 01. 23</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="detail">교촌치킨, 서울청년센터 예비창업자와 ‘교촌1991 스쿨’ 진행</span>
+							<span class="date">2023. 12. 22</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="detail">교촌치킨, MZ와 함께 한 ‘교촌1991스쿨’ 7기… 참여자 열띤 호응 속 성료</span>
+							<span class="date">2023. 11. 12</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="com news">
+				<h2>NEWS</h2>
+				<a href="#" class="btn_more _S">MORE</a>
+				<ul>
+					<li>
+						<a href="#">
+							<span class="detail">교촌치킨, MZ 사로잡을 ‘단짠’의 매력… 신규 사이드 메뉴 ‘옥수수볼’ 출시</span>
+							<span class="date">2023. 11. 16</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="detail">교촌치킨, 연말 식탁 맛있게 채울 문베어브루잉 ‘수제 맥주 3종’ 출시</span>
+							<span class="date">2023. 11. 14</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="detail">교촌치킨, 3가지 시그니처맛을 더 크게, 더 실속있게… 신메뉴 ‘점보윙시리즈’ 출시</span>
+							<span class="date">2023. 11. 09</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="inner_wrap">
+			<div class="footer_L">
+				<h1 class="logo_footer"><a href="#">KYOCHON</a></h1>
+				<div class="footer_info">
+					<address>사업장소재지 : 39852 경상북도 칠곡군 가산면 송신로 78 </address>
+					<address>본사(오산교육원)주소 : 18150 경기도 오산시 동부대로 436번길 55-18</address>
+					<p class="company">
+						<span>상호명 : 교촌에프엔비(주)</span>
+						<span>대표이사 : 윤진호</span><br class="_Mob">
+						<span>사업자등록번호 : 513-81-16574</span>
+					</p>
+					<p class="copy">Copyright 2015 © KYOCHON F&amp;B. All rights reserved.</p>
+				</div>
+			</div>
+
+			<div class="footer_R">
+				<div class="footer_menu">
+					<ul class="clearfix">
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+						<li><a href="#">이메일 무단수집거부</a></li>
+						<li><a href="#">찾아오시는 길</a></li>
+					</ul>
+				</div>
+				<div class="contact">
+					<ul class="clearfix">
+						<li><a href="#">♡ 가맹점 공간</a></li>
+						<li>전화주문 1577 - 1911</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+ </body>
+
+</html>
