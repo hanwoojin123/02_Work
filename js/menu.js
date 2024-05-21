@@ -15,57 +15,6 @@ window.addEventListener('load', function(){
 	}
 
 
-	const $elm_body = document.getElementsByTagName('body')[0];
-	const $elm_header = document.getElementsByTagName('header')[0];
-	const $elm_nav = document.getElementsByTagName('nav')[0];
-	const $btn_menu = document.getElementById('btn_menu');
-	const $btn_nav = document.getElementsByClassName('btn_nav');
-
-
-	$btn_menu.addEventListener('click', function(){
-		nav_init()
-		cls_toggle($elm_header, 'on');
-		if($elm_header.classList.contains("on")) $elm_body.style.overflow = "hidden";
-		else $elm_body.style.overflow = "auto";
-	});
-
-	for (var i = 0; i < $btn_nav.length; i++) {
-		$btn_nav[i].index = i;
-		$btn_nav[i].onclick = function(){
-			if (!this.parentNode.classList.contains('active')) {
-				nav_init();
-				btn_act($btn_nav, this.index);
-			} else {
-				this.parentNode.classList.remove('active');
-			}
-		}
-	}
-
-	function nav_init(){
-		btn_act($btn_nav, 0);
-		const navItems = document.querySelectorAll('nav > ul > li');
-		for (const navItem of navItems) {
-			navItem.classList.remove('active');
-		}
-	}
-
-	function btn_act(_elm, _idx){
-		for(var i = 0; i < _elm.length; i++) {
-			_elm[i].parentNode.classList.remove("active");
-		}
-		_elm[_idx].parentNode.classList.add("active");
-	}
-	function bg_act(_elm, _idx){
-		for (var i = 0; i < _elm.length; i++) {
-			_elm[i].classList.remove("active");
-		}
-		_elm[_idx].classList.add("active");
-	}
-
-	function cls_toggle(_target, _clsName){
-		_target.classList.toggle(_clsName);
-	}
-
 
 	if(!isMobile){
 
@@ -77,13 +26,23 @@ window.addEventListener('load', function(){
 	
 		if(screen.width >= 768){
 
-			
-
+			$(document).ready(function() {
+                $('#menu li').click(function() {
+                    $('#menu li').not(this).removeClass('on');
+                    $(this).toggleClass('on');
+                });
+            });
+            
 		}
 		else {
 
-			
-
+			$(document).ready(function() {
+                $('#menu li').click(function() {
+                    $('#menu li').not(this).removeClass('on');
+                    $(this).toggleClass('on');
+                });
+            });
+            
 		}
 
 	}

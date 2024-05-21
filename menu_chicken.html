@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang='ko'>
+<head>
+
+	<meta charset="utf-8">
+	<title>교촌치킨</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/menu.css">
+	<style>
+
+	</style>
+	<!-- [if it IE 9]
+		<script src="js/html5shiv.js"></script>
+	<![endif] -->
+	<script src="js/common.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+</head>
+
+ <body>
+
+	<header>
+		<div class="inner_wrap">
+			<h1 class="logo_header"><a href="index.html">KYOCHON</a></h1>
+			<nav>
+				<p class="nav_logo">KYOCHON</p>
+				<ul class="clearfix">
+					<li>
+						<button class="btn_nav">메뉴</button>
+						<ul class="sub">
+							<li><a href="menu_chicken.html">치킨</a></li>
+							<li><a href="menu_side.html">사이드</a></li>
+							<li><a href="menu_beer.html">수제맥주</a></li>
+						</ul>
+					</li>
+					<li>
+						<button class="btn_nav">브랜드</button>
+						<ul class="sub">
+							<li><a href="#">교촌소개</a></li>
+							<li><a href="#">CEO 인사말</a></li>
+							<li><a href="#">PR 센터</a></li>
+						</ul>
+					</li>
+					<li>
+						<button class="btn_nav">가맹</button>
+						<ul class="sub">
+							<li><a href="#">가맹안내</a></li>
+							<li><a href="#">가맹문의</a></li>
+						</ul>
+					</li>
+					<li>
+						<button class="btn_nav">매장</button>
+						<ul class="sub">
+							<li><a href="#">국내매장</a></li>
+							<li><a href="#">해외매장</a></li>
+						</ul>
+					</li>
+					<li>
+						<button class="btn_nav">이벤트</button>
+						<ul class="sub">
+							<li><a href="#">진행중인 이벤트</a></li>
+							<li><a href="#">지난 이벤트</a></li>
+							<li><a href="#">당첨자 발표</a></li>
+						</ul>
+					</li>
+					<li>
+						<button class="btn_nav">커뮤니티</button>
+						<ul class="sub">
+							<li><a href="#">공지사항</a></li>
+							<li><a href="#">뉴스</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<button id="btn_menu" class="btn_menu"><span class="blind">menu button</span></button>
+		</div>
+	</header>
+	
+	<section class="visual">
+        <h2>MENU</h2>
+	    <picture>
+			<source srcset="images/img_menu_visual_bg.jpg" media="(min-width: 1025px)">
+			<source srcset="images/img_menu_visual_bg.jpg" media="(max-width: 1024px)">
+			<img src="images/images/img_menu_visual_bg.jpg" alt="후라이드 치킨 사진">
+		</picture>
+	</section>
+	
+	<section class="menu_pag">
+	    <h2 class="blind">pag section</h2>
+	    <div class="inner_wrap">
+            <ul>
+                <li class="on"><a href="menu_chicken.html">치킨</a></li>
+                <li><a href="menu_side.html">사이드</a></li>
+                <li><a href="menu_beer.html">수제맥주</a></li>
+            </ul>
+        </div>    
+	</section>
+	
+	<section class="menu_list">
+        <h2 class="blind">menu_list section</h2>
+        <div class="inner_wrap">
+            <ul id="menu">
+                <li class="best">
+                    <div class="front">
+                        <img src="images/img_교촌_오리지날.png" alt="교촌 오리지날">
+                        <p class="name">교촌 오리지날</p>
+                        <p class="name_en">KYOCHON ORIGINAL</p>
+                    </div>
+                    <div class="back">
+                        <p class="name">교촌 오리지날</p>
+                        <p class="desc">교촌만의 차별화된 마늘과 간장 소스의 풍부한 맛이 어우러진 한 마리 치킨</p>
+                        <p class="price">19,000원</p>
+                        <button class="btn_more _L">상세 보기</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="front">
+                        <img src="images/img_교촌_콤보.png" alt="교촌 오리지날">
+                        <p class="name">교촌 콤보</p>
+                        <p class="name_en">ORIGINAL KOMBO</p>
+                    </div>
+                    <div class="back">
+                        <p class="name">교촌 콤보</p>
+                        <p class="desc">마늘과 간장소스의 풍부한 맛에 가장 인기있는 부위인 날개와 다리를 함께 즐길 수 있는 메뉴</p>
+                        <p class="price">22,000원</p>
+                        <button class="btn_more _L">상세 보기</button>
+                    </div>
+                </li>
+                <li class="best">
+                    <div class="front">
+                        <img src="images/img_교촌_윙.png" alt="교촌 윙">
+                        <p class="name">교촌 윙</p>
+                        <p class="name_en">ORIGINAL WING</p>
+                    </div>
+                    <div class="back">
+                        <p class="name">교촌 윙</p>
+                        <p class="desc">마늘과 간장소스의 풍부한 맛이 묻어나는 날개와 봉의 멋진 조화 교촌윙</p>
+                        <p class="price">22,000원</p>
+                        <button class="btn_more _L">상세 보기</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="front">
+                        <img src="images/img_교촌_순살.png" alt="교촌 순살">
+                        <p class="name">교촌 순살</p>
+                        <p class="name_en">ORIGINAL BONELESS</p>
+                    </div>
+                    <div class="back">
+                        <p class="name">교촌 순살</p>
+                        <p class="desc">부드럽고 바삭한 정육 순살에 감칠 맛나는 마늘 간장 소스가 어우러진 순살치킨</p>
+                        <p class="price">22,000원</p>
+                        <button class="btn_more _L">상세 보기</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="front">
+                        <img src="images/img_교촌_레드오리지날.png" alt="레드 오리지날">
+                        <p class="name">레드 오리지날</p>
+                        <p class="name_en">RED ORIGINAL</p>
+                    </div>
+                    <div class="back">
+                        <p class="name">레드 오리지날</p>
+                        <p class="desc">국내산 청양 홍고추의 매콤함이 일품인 한 마리 치킨</p>
+                        <p class="price">20,000원</p>
+                        <button class="btn_more _L">상세 보기</button>
+                    </div>
+                </li>
+                <li class="best">
+                    <div class="front">
+                        <img src="images/img_교촌_레드콤보.png" alt="레드 콤보">
+                        <p class="name">레드 콤보</p>
+                        <p class="name_en">RED KOMBO</p>
+                    </div>
+                    <div class="back">
+                        <p class="name">레드 콤보</p>
+                        <p class="desc">국내산 청양 홍고추의 매콤한 맛에 날개와 다리를 함께 즐길 수 있는 메뉴</p>
+                        <p class="price">23,000원</p>
+                        <button class="btn_more _L">상세 보기</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="front">
+                        <img src="images/img_교촌_레드윙.png" alt="레드 윙">
+                        <p class="name">레드 윙</p>
+                        <p class="name_en">RED WING</p>
+                    </div>
+                    <div class="back">
+                        <p class="name">레드 윙</p>
+                        <p class="desc">국내산 청양 홍고추의 매콤함이 골고루 밴 쫄깃한 날개와 봉의 만남!</p>
+                        <p class="price">23,000원</p>
+                        <button class="btn_more _L">상세 보기</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="front">
+                        <img src="images/img_교촌_레드순살.png" alt="레드 순살">
+                        <p class="name">레드 순살</p>
+                        <p class="name_en">RED BONELESS</p>
+                    </div>
+                    <div class="back">
+                        <p class="name">레드 순살</p>
+                        <p class="desc">부드럽고 바삭한 정육 순살에 청양 홍고추의 매콤함이 맛있게 어우러진 순살치킨</p>
+                        <p class="price">23,000원</p>
+                        <button class="btn_more _L">상세 보기</button>
+                    </div>
+                </li>
+                <li class="best">
+                    <div class="front">
+                        <img src="images/img_교촌_반반오리지날.png" alt="반반 오리지날">
+                        <p class="name">반반 오리지날</p>
+                        <p class="name_en">HALF &amp; HALF ORIGINAL</p>
+                    </div>
+                    <div class="back">
+                        <p class="name">반반 오리지날</p>
+                        <p class="desc">마늘 간장 맛과 매콤한 맛이 어우러진 한 마리 치킨</p>
+                        <p class="price">20,000원</p>
+                        <button class="btn_more _L">상세 보기</button>
+                    </div>
+                </li>
+                <li class="best">
+                    <div class="front">
+                        <img src="images/img_교촌_반반콤보.png" alt="반반 콤보">
+                        <p class="name">반반 콤보</p>
+                        <p class="name_en">HALF &amp; HALF KOMBO</p>
+                    </div>
+                    <div class="back">
+                        <p class="name">반반 콤보</p>
+                        <p class="desc">마늘 간장 맛과 매콤한 맛이 밴 날개와 다리의 행복한 만남</p>
+                        <p class="price">23,000원</p>
+                        <button class="btn_more _L">상세 보기</button>
+                    </div>
+                </li>
+                <li class="best">
+                    <div class="front">
+                        <img src="images/img_교촌_반반윙.png" alt="반반 윙">
+                        <p class="name">반반 윙</p>
+                        <p class="name_en">HALF &amp; HALF WING</p>
+                    </div>
+                    <div class="back">
+                        <p class="name">반반 윙</p>
+                        <p class="desc">마늘 간장 맛과 매콤한 맛이 밴 날개와 봉의 멋진 조화</p>
+                        <p class="price">23,000원</p>
+                        <button class="btn_more _L">상세 보기</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="front">
+                        <img src="images/img_교촌_반반순살.png" alt="반반 순살">
+                        <p class="name">반반 순살</p>
+                        <p class="name_en">HALF &amp; HALF BONELESS</p>
+                    </div>
+                    <div class="back">
+                        <p class="name">반반 순살</p>
+                        <p class="desc">부드럽고 바삭한 정육 순살에 감칠 맛나는 마늘 간장 소스와 청양 홍고추의 매콤함을 동시에 느낄 수 있는 순살치킨</p>
+                        <p class="price">23,000원</p>
+                        <button class="btn_more _L">상세 보기</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="front">
+                        <img src="images/img_교촌_블랙시크릿오리지날.png" alt="블랙시크릿 오리지날">
+                        <p class="name">블랙시크릿 오리지날</p>
+                        <p class="name_en">BLACK SECRET ORIGINAL</p>
+                    </div>
+                    <div class="back">
+                        <p class="name">블랙시크릿 오리지날</p>
+                        <p class="desc">다섯가지 맛과 향을 내는 오향에 맛 간장과 흑임자, 청양고추를 더한 깊은 풍미의 치킨</p>
+                        <p class="price">20,000원</p>
+                        <button class="btn_more _L">상세 보기</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="front">
+                        <img src="images/img_교촌_블랙시크릿콤보.png" alt="블랙시크릿 콤보">
+                        <p class="name">블랙시크릿 콤보</p>
+                        <p class="name_en">BLACK SECRET KOMBO</p>
+                    </div>
+                    <div class="back">
+                        <p class="name">블랙시크릿 콤보</p>
+                        <p class="desc">다섯가지 맛과 향을 내는 오향에 맛 간장과 흑임자, 청양고추를 더한 깊은 풍미로 날개와 다리를 함께!</p>
+                        <p class="price">23,000원</p>
+                        <button class="btn_more _L">상세 보기</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="front">
+                        <img src="images/img_교촌_블랙시크릿콤보_S.png" alt="블랙시크릿 콤보[S]">
+                        <p class="name">블랙시크릿 콤보[S]</p>
+                        <p class="name_en">BLACK SECRET KOMBO[S]</p>
+                    </div>
+                    <div class="back">
+                        <p class="name">블랙시크릿 콤보[S]</p>
+                        <p class="desc">[반마리] 다섯가지 맛과 향을 내는 오향에 맛 간장과 흑임자, 청양고추를 더한 깊은 풍미로 날개와 다리를 함께!</p>
+                        <p class="price">14,000원</p>
+                        <button class="btn_more _L">상세 보기</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="front">
+                        <img src="images/img_교촌_블랙시크릿순살.png" alt="블랙시크릿 순살">
+                        <p class="name">블랙시크릿 순살</p>
+                        <p class="name_en">BLACK SECRET BONELESS</p>
+                    </div>
+                    <div class="back">
+                        <p class="name">블랙시크릿 순살</p>
+                        <p class="desc">다섯가지 맛과 향을 내는 오향에 맛 간장과 흑임자, 청양고추를 더한 깊은 풍미의 순살치킨</p>
+                        <p class="price">23,000원</p>
+                        <button class="btn_more _L">상세 보기</button>
+                    </div>
+                </li>
+                <li class="best">
+                    <div class="front">
+                        <img src="images/img_교촌_허니오리지날.png" alt="허니 오리지날">
+                        <p class="name">허니 오리지날</p>
+                        <p class="name_en">HONEY ORIGINAL</p>
+                    </div>
+                    <div class="back">
+                        <p class="name">허니 오리지날</p>
+                        <p class="desc">달콤 바삭한 맛이 일품인 한 마리 치킨</p>
+                        <p class="price">19,000원</p>
+                        <button class="btn_more _L">상세 보기</button>
+                    </div>
+                </li>
+                <li class="best">
+                    <div class="front">
+                        <img src="images/img_교촌_허니콤보.png" alt="허니 콤보">
+                        <p class="name">허니 콤보</p>
+                        <p class="name_en">HONEY KOMBO</p>
+                    </div>
+                    <div class="back">
+                        <p class="name">허니 콤보</p>
+                        <p class="desc">달콤한 허니소스에 쫄깃한 날개와 담백한 다리가 만난 메뉴</p>
+                        <p class="price">23,000원</p>
+                        <button class="btn_more _L">상세 보기</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="front">
+                        <img src="images/img_교촌_허니순살.png" alt="허니 순살">
+                        <p class="name">허니 순살</p>
+                        <p class="name_en">HONEY BONELESS</p>
+                    </div>
+                    <div class="back">
+                        <p class="name">허니 순살</p>
+                        <p class="desc">살맛나는 꿀조합! 부드럽고 담백한 안심과 정육을 사용한 순살치킨과 달콤한 허니소스의 조화!</p>
+                        <p class="price">23,000원</p>
+                        <button class="btn_more _L">상세 보기</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="front">
+                        <img src="images/img_교촌_파채소이살살.png" alt="파채소이살살">
+                        <p class="name">파채소이살살</p>
+                        <p class="name_en">GREEN ONION BONELESS</p>
+                    </div>
+                    <div class="back">
+                        <p class="name">파채소이살살</p>
+                        <p class="desc">새콤달콤한 소이소스와 담백한 살살치킨에 신선한 채소를 곁들인 촉촉하며 바삭한 맛</p>
+                        <p class="price">19,000원</p>
+                        <button class="btn_more _L">상세 보기</button>
+                    </div>
+                </li>
+	        </ul>
+        </div>
+	</section>
+	
+    <footer>
+		<div class="inner_wrap">
+			<div class="footer_L">
+				<h1 class="logo_footer"><a href="#">KYOCHON</a></h1>
+				<div class="footer_info">
+					<address>사업장소재지 : 39852 경상북도 칠곡군 가산면 송신로 78 </address>
+					<address>본사(오산교육원)주소 : 18150 경기도 오산시 동부대로 436번길 55-18</address>
+					<p class="company">
+						<span>상호명 : 교촌에프엔비(주)</span>
+						<span>대표이사 : 윤진호</span><br class="_Mob">
+						<span>사업자등록번호 : 513-81-16574</span>
+					</p>
+					<p class="copy">Copyright 2015 © KYOCHON F&amp;B. All rights reserved.</p>
+				</div>
+			</div>
+
+			<div class="footer_R">
+				<div class="footer_menu">
+					<ul class="clearfix">
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+						<li><a href="#">이메일 무단수집거부</a></li>
+						<li><a href="#">찾아오시는 길</a></li>
+					</ul>
+				</div>
+				<div class="contact">
+					<ul class="clearfix">
+						<li><a href="#">♡ 가맹점 공간</a></li>
+						<li>전화주문 1577 - 1911</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+ </body>
+
+</html>

@@ -1,0 +1,189 @@
+@charset "utf-8";
+/* ============================
+   ========  menu.css  ========
+   ========  (Kyochon)  =======
+   ============================ */
+
+
+
+/* ========== Mobile(start) ========== */
+@media screen and (max-width: 767px) {
+    
+    
+    header { position: relative; color: #000; }
+    header h1, header button { filter: invert(100); }
+    header.on button.btn_menu { filter: none; }
+    header nav ul > li { filter: invert(100); }
+    
+    /* ======= visual 영역 ======= */
+    
+    section.visual { position: relative; width: 100%; height: 200px; }
+	section.visual h2 { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; font-size: 2.2857em; z-index: 1; margin: 0; }
+	section.visual img { display: block; width: 100%; height: 100%; object-fit: cover; filter: brightness(0.9); }
+    
+    
+    /* ======= menu_pag 영역 ======= */
+    
+    section.menu_pag { padding-top: 1.4285em; }
+    section.menu_pag ul { display: flex; justify-content: center; }
+    section.menu_pag ul > li { position: relative; }
+    section.menu_pag ul > li + li { margin-left: 1.875em; }
+    section.menu_pag ul > li.on > a { color: #f8b915; }
+    section.menu_pag ul > li.on::before { content: ''; position: absolute; top: 75%; left: 50%; transform: translate(-50%, -50%); display: block; width: 100%; height: 4px; background: #f8b915; }
+    section.menu_pag ul > li > a { display: block; padding: 1.25em 0; font-family: "NotoSansKR-Bold"; font-size: 1.1428em; }
+    
+    
+    /* ======= menu_list 영역 ======= */
+    
+    section.menu_list { padding: 1.0714em 1.4285em 0 ; }
+    section.menu_list ul > li { overflow: hidden; position: relative; margin-bottom: 1.7857em; cursor: pointer; }
+    section.menu_list ul > li.best::before { content: 'BEST'; position: absolute; top: 10px; right: 10px; display: block; padding: 3px 10px; background: #f8b915; color: #fff; font-family: "NotoSansKR-Bold"; border-radius: 999999px; }
+    
+    section.menu_list ul .front { text-align: center; transition: all 0.3s; }
+    section.menu_list ul .front > img { display: block; width: 100%; height: 100%; }
+    section.menu_list ul .front > p.name { font-size: 1.2857em; font-family: "NotoSansKR-Bold"; margin-bottom: 0.3888em; }
+    section.menu_list ul .front > p.name_en { color: #f8b915; font-family: "NotoSansKR-Bold"; }
+    
+    section.menu_list ul .back { position: absolute; top: 100%; left: 50%; transform: translateX(-50%); width: 70%; opacity: 0; text-align: center; transition: all 0.3s; }
+    section.menu_list ul .back > p.name { color: #f8b915; font-size: 1.2857em; font-family: "NotoSansKR-Bold"; margin-bottom: 0.555em; }
+    section.menu_list ul .back > p.desc { margin-bottom: 0.7142em; word-break: keep-all; }
+    section.menu_list ul .back > p.price { font-size: 1.1428em; font-family: "NotoSansKR-Medium"; margin-bottom: 0.9375em; }
+    
+    section.menu_list ul li.on .front { opacity: 0; transform: translateY(-100%); }
+    section.menu_list ul li.on .back { opacity: 1; top: 50%; transform: translate(-50%, -50%); }
+    
+    
+}
+/* ========== Mobile(end) ========== */
+
+/*  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!						!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!		Kyochon			!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!						!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* ========== Tablet(start) ========== */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    
+    header { position: relative; color: #000; }
+    header h1, header button { filter: invert(100); }
+    header.on button.btn_menu { filter: none; }
+    header nav ul > li { filter: invert(100); }
+    
+    /* ======= visual 영역 ======= */
+    
+    section.visual { position: relative; width: 100%; height: 320px; }
+	section.visual h2 { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; font-size: 3.4375em; z-index: 1; margin: 0; }
+	section.visual img { display: block; width: 100%; height: 100%; object-fit: cover; filter: brightness(0.9); }
+    
+    
+    /* ======= menu_pag 영역 ======= */
+    
+    section.menu_pag { padding-top: 1.875em; }
+    section.menu_pag ul { display: flex; justify-content: center; }
+    section.menu_pag ul > li { position: relative; }
+    section.menu_pag ul > li + li { margin-left: 2.5em; }
+    section.menu_pag ul > li.on > a { color: #f8b915; }
+    section.menu_pag ul > li.on::before { content: ''; position: absolute; top: 75%; left: 50%; transform: translate(-50%, -50%); display: block; width: 100%; height: 4px; background: #f8b915; }
+    section.menu_pag ul > li > a { display: block; padding: 1.25em 0; font-family: "NotoSansKR-Bold"; font-size: 1.25em; }
+    
+    
+    /* ======= menu_list 영역 ======= */
+    
+    section.menu_list { padding: 1.25em 1.75em 0 ; }
+    section.menu_list ul { display: flex; flex-wrap: wrap; }
+    section.menu_list ul > li { overflow: hidden; position: relative; flex-basis: 33.3333%; margin-bottom: 3.125em; cursor: pointer; }
+    section.menu_list ul > li.best::before { content: 'BEST'; position: absolute; top: 5px; right: 5px; display: block; padding: 3px 10px; background: #f8b915; color: #fff; font-family: "NotoSansKR-Bold"; border-radius: 999999px; }
+    
+    section.menu_list ul .front { text-align: center; transition: all 0.3s; }
+    section.menu_list ul .front > img { display: block; width: 100%; height: 100%; }
+    section.menu_list ul .front > p.name { font-size: 1.25em; font-family: "NotoSansKR-Bold"; margin-bottom: 0.5em; }
+    section.menu_list ul .front > p.name_en { color: #f8b915; font-family: "NotoSansKR-Bold"; }
+    
+    section.menu_list ul .back { position: absolute; top: 100%; left: 50%; transform: translateX(-50%); width: 90%; opacity: 0; text-align: center; transition: all 0.3s; }
+    section.menu_list ul .back > p.name { color: #f8b915; font-size: 1.25em; font-family: "NotoSansKR-Bold"; margin-bottom: 0.35em; }
+    section.menu_list ul .back > p.desc { margin-bottom: 0.4375em; word-break: keep-all; }
+    section.menu_list ul .back > p.price { font-size: 1.375em; font-family: "NotoSansKR-Medium"; margin-bottom: 0.909em; }
+    
+    section.menu_list ul li.on .front { opacity: 0; transform: translateY(-100%); }
+    section.menu_list ul li.on .back { opacity: 1; top: 50%; transform: translate(-50%, -50%); }
+    
+    
+}
+/* ========== Tablet(end) ========== */
+
+/*  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!						!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!		Kyochon			!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!						!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* ========== Desktop(start) ========== */
+@media screen and (min-width: 1025px) {
+    
+    
+    header { position: relative; color: #000; }
+    header h1 { filter: invert(100); }
+    
+    /* ======= visual 영역 ======= */
+    
+    section.visual { position: relative; width: 100%; height: 370px; }
+	section.visual h2 { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; font-size: 4.0625em; z-index: 1; margin: 0; }
+	section.visual img { display: block; width: 100%; height: 100%; object-fit: cover; filter: brightness(0.9); }
+    
+    
+    /* ======= menu_pag 영역 ======= */
+    
+    section.menu_pag { padding-top: 2.1875em; }
+    section.menu_pag ul { display: flex; justify-content: center; }
+    section.menu_pag ul > li { position: relative; }
+    section.menu_pag ul > li + li { margin-left: 2.7272em; }
+    section.menu_pag ul > li.on > a { color: #f8b915; }
+    section.menu_pag ul > li.on::before { content: ''; position: absolute; top: 75%; left: 50%; transform: translate(-50%, -50%); display: block; width: 100%; height: 4px; background: #f8b915; }
+    section.menu_pag ul > li > a { display: block; padding: 1.1363em 0; font-family: "NotoSansKR-Bold"; font-size: 1.375em; }
+    
+    
+    /* ======= menu_list 영역 ======= */
+    
+    section.menu_list { padding-top: 1.5625em; }
+    section.menu_list ul { display: flex; flex-wrap: wrap; }
+    section.menu_list ul > li { overflow: hidden; position: relative; flex-basis: 25%; margin-bottom: 3.125em; }
+    section.menu_list ul > li.best::before { content: 'BEST'; position: absolute; top: 10px; right: 10px; display: block; padding: 3px 10px; background: #f8b915; color: #fff; font-family: "NotoSansKR-Bold"; border-radius: 999999px; }
+    
+    section.menu_list ul .front { text-align: center; transition: all 0.5s; }
+    section.menu_list ul .front > img { display: block; width: 100%; height: 100%; }
+    section.menu_list ul .front > p.name { font-size: 1.375em; font-family: "NotoSansKR-Bold"; margin-bottom: 0.4545em; }
+    section.menu_list ul .front > p.name_en { color: #f8b915; font-family: "NotoSansKR-Bold"; }
+    
+    section.menu_list ul .back { position: absolute; top: 100%; left: 50%; transform: translateX(-50%); width: 70%; opacity: 0; text-align: center; transition: all 0.5s; }
+    section.menu_list ul .back > p.name { color: #f8b915; font-size: 1.375em; font-family: "NotoSansKR-Bold"; margin-bottom: 0.6818em; }
+    section.menu_list ul .back > p.desc { margin-bottom: 0.9375em; word-break: keep-all; }
+    section.menu_list ul .back > p.price { font-size: 1.375em; font-family: "NotoSansKR-Medium"; margin-bottom: 0.909em; }
+    
+    section.menu_list ul li:hover .front { opacity: 0; transform: translateY(-100%); }
+    section.menu_list ul li:hover .back { opacity: 1; top: 50%; transform: translate(-50%, -50%); }
+    
+    
+}
+/* ========== Desktop(end) ========== */
